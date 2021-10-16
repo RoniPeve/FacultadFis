@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Facultad de Ingenieria de Sistemas| UNICA</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+   
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/webDocente.css">
+  <script type="text/javascript">
+     function mostrar(){
+      document.getElementById("contenido").style.display="block";
+    }
+    function ocultar(){
+      document.getElementById("contenido").style.display="none";
+    }
+    function mostrar_ocultar(){
+      var contenido =document.getElementById("contenido");
+
+
+      if (contenido.style.display =="block") {
+        ocultar();
+        document.getElementById("boton").value="ocultar";
+      }
+      else{
+        mostrar();
+        document.getElementById("boton").value="mostrar";
+
+      }
+    }
+
+
+  </script>
+  <style type="text/css">
+    
+    .bot{
+  margin: 50px;
+  border: 2px solid #000;
+  font-weight: bold;
+  font-family: mifuente;
+  font-size: 16px;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  transition: background 1s,color 1s;
+  position: relative;
+  left: 35%;
+}
+.bot:hover{
+  background:#000;
+  color: #fff;
+}
+.div{
+  position: relative;
+  display: inline-block;
+  left: 15%
+}
+.intro{
+  width: 80%;
+
+}
+  </style>
+
+
+
+</head>
+<body>
+  <header>
+    <figure id="logo">
+      <img src="img/unica.png" alt="logo de la Unica">
+    </figure>
+    <h1>
+      Facultad de Ingeniería de Sistemas
+    </h1>
+    <figure id="fis">
+      <img src="img/fis.png" alt="">
+    </figure>
+  </header>
+  <nav >
+    <input type="checkbox" id="boton_menu">
+    <label for="boton_menu"><img src="img/menu.png" alt=""></label>
+    <div class="menu">
+      <ul >
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="infraestructura.html">Infraestructura</a></li>
+        <li><a href="docentes.html">Docentes</a></li>
+        <li><a href="web docente.html" class="select">Web Docente</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li><a href="acerca de.html">Acerca de</a></li>
+
+      </ul>
+    </div>
+    
+  </nav>
+  <section>
+  <div class="intro">
+        <div class="foto">
+          <figure>
+            <img src="img/lino.jpg" alt="">
+          </figure>
+        </div>
+        <div class="perfil">
+          <h3>QUISPE TINCOPA LINO MARTIN</h3>
+          <p>
+          
+            Ingeniero Mecánico Electricista
+            Ingeniero de Sistemas
+            Profesional en Administración de Empresas-IPAE
+            Magister en Ingeniería de Sistemas
+            Doctor en Ciencias Empresariales 
+            aspirante a Doctor en Ingeniería de Sistemas
+            </p>
+          
+          <p>linoquispetincopa@hotmail.com</p>
+         </div>
+  </div>
+  </section>
+
+<input type="submit" class="bot" value="informacion" onclick="mostrar_ocultar()">
+
+  <section class="contenido" id="contenido">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4 contenidos" >
+            <h2>Contenido</h2>
+            <ul>
+              <li><a href="formacion.html" target="1" class="indice">Perfil Profesional</a></li>
+              <li>
+                  <div class="enlaces" ><a href="formacion.html" target="1"><img src="img/perfil.png" alt=""> </a>
+                    
+                  </div>
+              </li>
+            <li><a href="Materiales.html" target="1" class="indice">Materiales</a></li>
+              <li>
+                  <div class="enlaces"><a href="Materiales.html" target="1"><img src="img/materiales.png" alt=""> </a>
+                    
+                  </div>
+              </li>
+            <li><a href="experiencia.html" target="1" class="indice">Experiencia Laboral</a></li>
+              <li>
+                  <div class="expe"><a href="experiencia.html" target="1"><img src="img/experiencia.jpg" alt=""  > </a>
+                    
+                  </div>
+              </li>
+              <li><a href="contacto.html" target="1" class="indice">Contacto</a></li>
+              <li>
+                  <div class="expe"><a href="contacto.html" target="1"><img src="img/sldcontacto.jpg" alt="" > </a>    
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <iframe src="formacion.html" frameborder="0" width="800" height="600" name="1" scrolling="auto"></iframe>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="contenedor">
+      <div class="footer-main">
+        <div class="footer-columna">
+          <h3>Dirección</h4>
+          <span id="location"><img src="img/Location_41047.png" alt=""><p>Panamericana Sur S/N - Ciudad Universitaria Ica</p></span><br>
+          <span id="phone"><img src="img/Phone_31105.png" alt=""><p>(056) 387171</p></span><br>
+          <span id="mail"><img src="img/email.png" alt=""><p>@SistemasUnica</p></span>
+        </div>
+        <div class="footer-columna">
+          <h3>Redes Sociales</h3>
+          <span id="facebook"><a href="https://web.facebook.com/SistemasUnica/" target="_blank" title="Facebook"><img src="img/facebook_soc.png" alt=""></a></span>
+          <span id="twitter"><a href="https://twitter.com/sistemasunica?lang=es" target="_blank" title="Twitter"><img src="img/Twitter con color.png" alt="" ></a></span>
+        </div>
+        <div class="footer-columna">
+          <h3>Mas Información</h3>
+          <p>Para mas informacion por favor acercarse a las oficinas de la Facultad</p>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <p>&copy; Facultad de Ingenieria de Sistemas</p>
+    </div>
+  </footer>
+</body>
+</html>

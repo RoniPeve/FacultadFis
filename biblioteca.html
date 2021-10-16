@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<title>Biblioteca | Fis</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/infraestructura.css">
+	<style>
+		section{
+	overflow: hidden;
+
+}
+body{
+	background: #FBEFFB;
+}
+
+.contenido{
+	margin-bottom: 2em;
+}
+.contenidos{
+	padding: 0;
+	background: #28303b;
+	margin: 0px;
+}
+.contenido ul{
+	list-style: none;
+}
+.titulo{
+	color: #d4dee7;
+	size: 1.2em;
+	text-align: center;
+	font-style: italic;
+	font-family: arial;
+	padding-bottom: 0.8em;
+
+}
+
+.indice{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	color: #d4dee7;
+}
+
+.container section{
+	padding: 0;
+	margin: 0;
+}
+#contenido{
+	padding: 5px;
+	margin: 0;
+}
+.fotoportada{
+	width: 100%;
+}
+.libro{
+	width: 100%;
+}
+.buscador{
+	padding: 10px;
+	margin: 5px;
+}
+.cuerpo{
+	padding: 0;
+}
+.cuerpo p{
+	text-align: center;
+}/*
+.descargar{
+	background: #FE2E64;
+}
+.descargar:hover{
+	background: red;
+}*/
+.fondo{
+	overflow: hidden;
+}
+.titulos{
+	background: red;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.container ul{
+	padding: 10px;
+	margin-top: 15px;
+}
+.subtitulo{
+	color: #cf6279;
+	padding: 10px;
+	margin: 0;
+	margin-left: 10px;
+}
+.container ul li{
+	padding: 3px;
+	margin-left: 5px;
+}
+ .libro_con img{
+	text-align: center;
+}
+.flecha{
+	color: white;
+}
+</style>
+
+	<style>
+		#banner img{
+		width: 100%;
+		padding: 0;
+		margin:0;
+		}
+		/*form{
+			width: 300px;
+			margin: 0 auto;
+		}
+		fieldset{
+			background: #fff;
+			border: 1px solid #333;
+			border-radius: 5px;
+			padding: 0 0 0 40px;
+		}
+		input, button{
+			position: relative;
+			width: 200px;
+			height: 50px;
+			padding: 0;
+		}
+		input{
+			color:#666;
+			border:none;
+			
+		}
+		button{
+			width: 50px;
+			border:none;
+			background: #333;
+		}
+		.fa-search{
+
+		}*/
+
+		.log{
+			float: right;
+			margin-right: 100px;
+			letter-spacing: 1px;
+			font-size: 17px;
+
+		}
+		
+		.logins{
+			background: #333;
+			padding: 25px;
+			margin: 0;
+			color: white;
+		}
+		span{
+			font-size: 1.5em;
+			font-weight: bold;
+			font-style: italic;
+		}
+		input[type=text], input[type=password], input[type=submit]{
+			padding: 5px;
+			font-size: 15px;
+			font-family: arial;
+			border:none;
+			margin: 3px;
+			color: black;
+		}
+		input[type=submit]{
+			background: orange;
+			color: white;
+			padding: 5px 15px;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		input[type=submit]:hover{
+			background: red;
+		}
+		.cuadro_Titulo{
+			background: red;
+			padding: 0.5em;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<figure id="logo">
+			<img src="img/unica.png" alt=" logo de la Unica">
+		</figure>
+		<h1>
+			Facultad de Ingeniería de Sistemas
+		</h1>
+		<figure id="fis">
+			<img src="img/fis.png" alt="">
+		</figure>
+	</header>
+	<nav >
+		<input type="checkbox" id="boton_menu">
+		<label for="boton_menu"><img src="img/menu.png" alt=""></label>
+		<div class="menu">
+			<ul >
+				<li><a href="index.html" >Inicio</a></li>
+				<li><a href="infraestructura.html">Infraestructura</a></li>
+				<li><a href="docentes.html">Docentes</a></li>
+				<li><a href="web docente.html">web docente</a></li>
+				<li><a href="biblioteca.html" class="select">Biblioteca</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="acerca de.html">Acerca de</a></li>
+
+			</ul>
+		</div>
+		
+	</nav>
+	<section class="logins">
+		<span>Biblioteca de la Facultad de Ingeniería de Sistemas</span>
+		<form action="" class="log">
+			<table>
+				<tr>
+					<td>Username</td>
+					<td>Password</td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Username"></td>
+					<td><input type="password" placeholder="Password"></td>
+					<td><input type="submit" value="Login"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<section class="contenido" id="contenido">
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4 contenidos" >
+
+            <div class="logo full-reset all-tittles cuadro_Titulo">
+                <i class="visible-xs zmdi zmdi-close pull-left mobile-menu-button" style="line-height: 20px; cursor: pointer; padding: 0 5px;"></i> 
+                <h2 class="titulo">Contenido</h2>
+            </div>
+
+                <div class="full-reset fondo" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
+                <figure class="libro_con">
+                    <img  src="img/logolibro.png" alt="Biblioteca" class="img-responsive center-box" style="width:55%;">
+                </figure>
+            	</div>
+			<div class="buscador">
+						<form class="form-inline mt-2 mt-md-0">
+            			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         			 </form>
+				</div>
+			<h3 class="subtitulo">Categorias</h2>
+            <ul>
+            <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice"> Programación</a></li>
+              
+            <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice">Base de Datos</a></li>
+              
+             <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice">Mecanica</a></li>
+             <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice">Analisis de Sistemas</a></li>
+             <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice">Sistemas Operativos</a></li>
+              <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice">Redes</a></li>
+              <li><i class="fas fa-angle-double-right flecha"></i> <a href="#" target="1" class="indice">Física</a></li>
+            </ul>
+           		
+          </div>
+
+          <div class="col-md-8">
+         	 <!--<section id="banner">
+				<img src="img/librosss.jpg" alt="">
+			</section>
+            	<form class="form-inline mt-2 mt-md-0">
+            	<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>-->
+          <main role="main" class="cuerpo">
+
+			      <section class="jumbotron text-center">
+			        <div class="container">
+			          <img class="fotoportada" src="img/librosss.jpg" alt="">
+			        </div>
+			      </section>
+					
+			      <div class="album py-5 bg-light">
+			        <div class="container">
+
+			          <div class="row">
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/analisis y diseño de sistemas.jpg" alt="">
+			                <div class="card-body">
+			                  <p class="card-text">Análisis y diseño de Sistemas, Kendall & Kendall</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                    <a href="materiales/Analisis y Diseño de Sistemas - Kendall y Kendall - 8ed.pdf" download="Analisis"><button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button></a>
+			                      
+			                      <a href="materiales/Analisis y Diseño de Sistemas - Kendall y Kendall - 8ed.pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button></a>
+			                      
+			                    </div>
+			                    <small class="text-muted">15 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/comunicaciones y redes de computadoras.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Comunicaciones y Redes de Computadoras</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                    <a href="materiales/comunicaciones-y-redes-de-computadores.pdf" download="comunicaciones-y-redes-de-computadores"><button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button></a>
+			                      <a href="materiales/comunicaciones-y-redes-de-computadores.pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button></a>
+			                      
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/Dinamica.jpg" alt="">
+			                <div class="card-body">
+			                  <p class="card-text">Dinamica <br> Russell C. Hibbeler</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                      <button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button>
+			                      <button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button>
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/fundamentosprogramacion.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Fundamentos de Programación - <br>Luis Joyanes Aguilar</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                    <a href="materiales/Fundamentos-de-programaci__n-4ta-Edici__n-Luis-Joyanes-Aguilar-2.pdf" download="fundamentosprogramacion"><button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button></a>
+			                      <a href="materiales/Fundamentos-de-programaci__n-4ta-Edici__n-Luis-Joyanes-Aguilar-2.pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button></a>
+			                      
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/poo.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Programación Orientada a Objetos</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                    <a href="materiales/kupdf.net_ceballos-programacioacuten-orientada-a-objetos-con-c-4ed.pdf" download="Poo"><button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button></a>
+			                      <a href="materiales/kupdf.net_ceballos-programacioacuten-orientada-a-objetos-con-c-4ed.pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button></a>
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/modernos.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Sistemas Operativos Modernos - <br>Tanenbaum</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                    <a href="materiales/sistemas-operativos-modernos.pdf" download="Sistemas Operativos"><button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button></a>
+			                      <a href="materiales/sistemas-operativos-modernos.pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button></a>
+			                      
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/dinamica4.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Dinámica</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                      <button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button>
+			                      <button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button>
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/linux.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Manual de Administración de Linux</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group"><a href="https://es.scribd.com/document/348952315/Manual-de-administracion-de-Linux-Steve-Shah-pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button></a>
+			                      <a href="https://es.scribd.com/document/348952315/Manual-de-administracion-de-Linux-Steve-Shah-pdf" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button></a>
+			                      
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4">
+			              <div class="card mb-4 shadow-sm">
+			                <img class="card-img-top libro" src="img/estatica2.jpg" alt="Card image cap">
+			                <div class="card-body">
+			                  <p class="card-text">Estática</p>
+			                  <div class="d-flex justify-content-between align-items-center">
+			                    <div class="btn-group">
+			                      <button type="button" class="btn btn-sm btn-outline-secondary descargar">Download</button>
+			                      <button type="button" class="btn btn-sm btn-outline-secondary descargar">view</button>
+			                    </div>
+			                    <small class="text-muted">9 mins</small>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+
+			    </main>
+			    <!-- menu-numeros --> 
+            <div class="btn-toolbar d-flex justify-content-center mb-3" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary active">Inicio</button>
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+                <button type="button" class="btn btn-secondary active">Final</button>
+              </div>
+            </div>
+          </div>
+        <!-- fin menu-numeros --> 
+
+          </div>
+        </div>
+    </div>
+  </section>
+
+	<section>
+		
+
+	</section>
+	<footer>
+		<div class="contenedor">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Dirección</h4>
+					<span id="location"><img src="img/Location_41047.png" alt=""><p>Panamericana Sur S/N - Ciudad Universitaria Ica</p></span><br>
+					<span id="phone"><img src="img/Phone_31105.png" alt=""><p>(056) 387171</p></span><br>
+					<span id="mail"><img src="img/email.png" alt=""><p>@SistemasUnica</p></span>
+				</div>
+				<div class="footer-columna">
+					<h3>Redes Sociales</h3>
+					<span id="facebook"><a href="https://web.facebook.com/SistemasUnica/" target="_blank" title="Facebook"><img src="img/facebook_soc.png" alt=""></a></span>
+					<span id="twitter"><a href="https://twitter.com/sistemasunica?lang=es" target="_blank" title="Twitter"><img src="img/Twitter con color.png" alt="" ></a></span>
+				</div>
+				<div class="footer-columna">
+					<h3>Mas Información</h3>
+					<p>Para mas informacion por favor acercarse a las oficinas de la Facultad</p>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<p>&copy; Facultad de Ingenieria de Sistemas</p>
+		</div>
+	</footer>
+</body>
+</html>
