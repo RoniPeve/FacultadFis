@@ -1,0 +1,57 @@
+section{
+	overflow: hidden;
+
+}
+body{
+	background: #FBEFFB;
+}
+.intro{
+	border: 3px solid #F781F3;
+	margin:5em;
+	padding:1.5em;
+	display: inline-block;
+	z-index: 1;
+
+}
+.intro .perfil p{
+	text-align: justify;
+}
+.foto img{
+	width: 120px;
+	float: left;
+	margin: 1em;
+
+}
+.contenido{
+	margin-bottom: 2em;
+}
+.contenidos{
+	padding: 0.5em;
+	background: skyblue;
+}
+.contenido ul{
+	list-style: none;
+}
+.enlaces img{
+	width: 100px;
+}
+.enlaces{
+	padding: 0.3em;
+}
+.expe img{
+	width: 200px;
+}
+.indice{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+@media(max-width: 768px){
+	iframe{
+		width: 500px;
+		height: 300px;
+		
+	}
+
+}

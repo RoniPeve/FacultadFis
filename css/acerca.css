@@ -1,0 +1,38 @@
+section{
+	overflow: hidden;
+}
+section p{
+	text-align: justify;
+}
+h2{
+	font-size: 1.5em;
+	text-align: center;
+}
+.acerca{
+	float: left;
+	width: 45%;
+	box-sizing: border-box;
+	margin:1em 1em;
+}
+.presentacion{
+	margin:1em 1em;
+}
+.acerca figure img{
+	border-radius: 10%;
+}
+
+@media(max-width: 768px){
+	.acerca{
+		width: 90%;
+		
+	}
+	.acerca figure img{
+		margin-left: 3em;
+	}
+	h2{
+		font-size: 1.3em;
+	}
+	h3{
+		font-size: 1.2em;
+	}
+}

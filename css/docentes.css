@@ -1,0 +1,40 @@
+
+h2{
+	text-align: center;
+	font-size: 1.6em;
+}
+.Listas{
+	overflow: hidden;
+}
+.Listas ul{
+	margin:1em 0 1em 1em;
+	font-size: 1em;
+	float: left;
+	width: 31%;
+	box-sizing: border-box;
+}
+h3{
+	margin:0 0 0 1em;
+}
+.Listas figure img{
+	width: 480px;
+	border-radius: 10%;
+}
+.Listas figure{
+	text-align: center;
+}
+@media(max-width: 768px){
+	.Listas figure img{
+	width: 240px;
+	}
+	.Listas ul{
+		font-size: 0.9em;
+		width: 80%;
+	}
+	.footer-main .footer-columna h3{
+		margin:0 0.5em 0 0;
+	}
+	section h2{
+		font-size: 1.3em;
+	}
+}
